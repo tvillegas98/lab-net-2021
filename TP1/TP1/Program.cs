@@ -29,7 +29,7 @@ namespace TP1
             Console.WriteLine(mensajeEntrada);
             string entrada = Console.ReadLine();
 
-            while (!int.TryParse(entrada, out numero) && numero < topeInferior && numero > topeSuperior)  
+            while (!int.TryParse(entrada, out numero) || numero < topeInferior || numero > topeSuperior)  
             {
                 Console.WriteLine(mensajeError);
                 entrada = Console.ReadLine();
@@ -99,6 +99,7 @@ namespace TP1
                 0,
                 MaximoTransportes
                 );
+
             List<Taxi> taxis = new List<Taxi>();
             List<Omnibus> omnibuses = new List<Omnibus>();
 
@@ -107,6 +108,7 @@ namespace TP1
 
             Program.ListarTaxis(taxis);
             Program.ListarOmnibuses(omnibuses);
+
             Console.ReadLine();
         }
     }
