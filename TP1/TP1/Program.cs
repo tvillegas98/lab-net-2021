@@ -29,6 +29,7 @@ namespace TP1
         }
         public static void ListarTaxis(List<Taxi> taxis)
         {
+            Console.WriteLine("-------------------------TAXIS-------------------------");
             int numTaxi = 0;
             foreach (Taxi taxi in taxis)
             {
@@ -39,6 +40,7 @@ namespace TP1
 
         public static void ListarOmnibuses(List<Omnibus> omnibuses)
         {
+            Console.WriteLine("-------------------------Omnibuses-------------------------");
             int numOmnibus = 0;
             foreach (Omnibus omnibus in omnibuses)
             {
