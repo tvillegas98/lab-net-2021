@@ -12,16 +12,6 @@ namespace TP1
         public const int MinOpciones = 1;
         public const int MaxOpciones = 5;
 
-        public static void MostrarMenu()
-        {
-            Console.WriteLine("Elija una opción: ");
-            Console.WriteLine("1.Definir la cantidad de Taxis y sus Pasajeros");
-            Console.WriteLine("2.Definir la cantidad de Omnibuses y sus Pasajeros");
-            Console.WriteLine("3.Listar todos los Taxis y sus pasajeros");
-            Console.WriteLine("4.Listar todos los Omnibuses y sus pasajeros");
-            Console.WriteLine("5.Cerrar Programa");
-        }
-
         public static int ObtenerNumero(string mensajeEntrada, string mensajeError, int topeInferior, int topeSuperior)
         {
             int numero;
