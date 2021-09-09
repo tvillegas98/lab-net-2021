@@ -9,7 +9,8 @@ namespace TP1
     public class Omnibus : TransportePublico
     {
 
-        public Omnibus(int pasajeros) : base(pasajeros) { }
+        public Omnibus(int pasajeros, string nombre) : base(pasajeros, nombre) { }
+
         public override string Avanzar()
         {
             return $"El Omnibus con {Pasajeros} pasajeros está avanzando.";

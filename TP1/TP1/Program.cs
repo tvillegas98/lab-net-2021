@@ -43,7 +43,7 @@ namespace TP1
             foreach (Taxi taxi in taxis)
             {
                 numTaxi++;
-                Console.WriteLine($"Taxi {numTaxi}: {taxi.Pasajeros} pasajeros");
+                Console.WriteLine($"Taxi {taxi.Nombre}-{numTaxi}: {taxi.Pasajeros} pasajeros");
             }
         }
 
@@ -53,7 +53,7 @@ namespace TP1
             foreach (Omnibus omnibus in omnibuses)
             {
                 numOmnibus++;
-                Console.WriteLine($"Omnibus {numOmnibus}: {omnibus.Pasajeros} pasajeros");
+                Console.WriteLine($"Omnibus {omnibus.Nombre}-{numOmnibus}: {omnibus.Pasajeros} pasajeros");
             }
         }
 
@@ -67,7 +67,9 @@ namespace TP1
                     0, 
                     MaximoTransportes
                     );
-                taxis.Add(new Taxi(pasajeros));
+                Console.WriteLine("Ingrese el nombre del Taxi");
+                string nombre = Console.ReadLine();
+                taxis.Add(new Taxi(pasajeros, nombre));
             }
         }
 
@@ -81,7 +83,9 @@ namespace TP1
                     0,
                     MaximoTransportes
                     );
-                omnibuses.Add(new Omnibus(pasajeros));
+                Console.WriteLine("Ingrese el nombre del Omnibus");
+                string nombre = Console.ReadLine();
+                omnibuses.Add(new Omnibus(pasajeros, nombre));
             }
         }
 

@@ -9,7 +9,7 @@ namespace TP1
     public class Taxi : TransportePublico
     {
 
-        public Taxi(int pasajeros) : base(pasajeros) { }
+        public Taxi(int pasajeros, string nombre) : base(pasajeros, nombre) { }
 
         public override string Avanzar()
         {

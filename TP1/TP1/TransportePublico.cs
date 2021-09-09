@@ -16,9 +16,18 @@ namespace TP1
             set { _pasajeros = value; }
         }
 
-        public TransportePublico(int pasajeros)
+        private string _nombre;
+
+        public string Nombre
+        {
+            get { return _nombre; }
+            set { _nombre = value; }
+        }
+
+        public TransportePublico(int pasajeros, string nombre)
         {
             this.Pasajeros = pasajeros;
+            this.Nombre = nombre;
         }
 
         public abstract string Avanzar();
