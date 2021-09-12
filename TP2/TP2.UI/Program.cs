@@ -14,13 +14,17 @@ namespace TP2.UI
         static void Main(string[] args)
         {
             //Ejercicio 1.
+            Console.WriteLine("-------------------Ejercio 1-------------------");
             int numero = MetodosHelper.ObtenerNumero("Ingrese un número: ", "Número inválido, intente nuevamente");
             EjerciciosHelper.IntentarDividirDiezPor(numero);
+            Console.WriteLine("-------------------Fin Ejercicio 1-------------------");
 
             //Ejercicio 2.
-            EjerciciosHelper.Division();
-
-
+            Console.WriteLine("-------------------Ejercio 2-------------------");
+            Console.WriteLine("Si la división es exitosa, se mostrará el resultado, en caso contrario, se mostrará 0(A menos que el dividendo sea 0)");
+            int resultado = EjerciciosHelper.Division();
+            Console.WriteLine($"El resultado es: {resultado}");
+            Console.WriteLine("-------------------Fin Ejercicio 2-------------------");
             //Ejercicio 3.
 
             try
@@ -45,6 +49,7 @@ namespace TP2.UI
             {
                 Console.WriteLine("No pude romper tu programa.");
             }
+            Console.ReadLine();
         }
     }
 }
