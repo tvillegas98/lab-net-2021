@@ -57,7 +57,7 @@ namespace TP2.Entities.MyHelpers
 
         public static void LevantarExcepcion()
         {
-            throw new Exception();
+            throw new Exception("Voy a romper tu programa.");
         }
     }
 }

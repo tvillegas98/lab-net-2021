@@ -25,8 +25,10 @@ namespace TP2.UI
             int resultado = EjerciciosHelper.Division();
             Console.WriteLine($"El resultado es: {resultado}");
             Console.WriteLine("-------------------Fin Ejercicio 2-------------------");
+            
+            
             //Ejercicio 3.
-
+            Console.WriteLine("-------------------Ejercio 3-------------------");
             try
             {
                 EjerciciosHelper.LevantarExcepcion();
@@ -35,9 +37,14 @@ namespace TP2.UI
             {
                 MessageBox.Show($"Tipo:{error.GetType()}\nError: {error.Message}\nStackTrace:{error.StackTrace}");
             }
+            finally
+            {
+                Console.WriteLine("No pude romper tu programa.");
+            }
+            Console.WriteLine("-------------------Fin Ejercicio 3-------------------");
 
             //Ejercicio 4.
-
+            Console.WriteLine("-------------------Ejercio 4-------------------");
             try
             {
                 throw new ExcepcionPersonalizada("Hola, llegué para romper tu programa.");
@@ -49,6 +56,8 @@ namespace TP2.UI
             {
                 Console.WriteLine("No pude romper tu programa.");
             }
+            Console.WriteLine("-------------------Fin Ejercicio 4-------------------");
+
             Console.ReadLine();
         }
     }
