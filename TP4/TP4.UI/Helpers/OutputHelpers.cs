@@ -36,5 +36,18 @@ namespace TP4.UI.Helpers
             Console.ReadLine();
             Console.Clear();
         }
+
+        public static void MostrarRegiones()
+        {
+            RegionLogic regions = new RegionLogic();
+            Console.Write($"{"RegionID",-10}|{"RegionDescription",15}|\n");
+            foreach (Region region in regions.GetAll())
+            {
+                Console.WriteLine($"{region.RegionID,-10}|{region.RegionDescription.RemoverEspaciosEnBlanco(),17}|");
+            }
+            Console.WriteLine("Presione una tecla para continuar...");
+            Console.ReadLine();
+            Console.Clear();
+        }
     }
 }

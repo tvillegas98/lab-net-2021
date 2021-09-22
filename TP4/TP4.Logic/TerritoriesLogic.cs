@@ -15,14 +15,15 @@ namespace TP4.Logic
             context.SaveChanges();
         }
 
-        public void Delete(int id)
+        public void Delete(string id)
         {
+
             Territories territory = context.Territories.Find(id);
             context.Territories.Remove(territory);
             context.SaveChanges();
         }
 
-        public Territories Get(int id)
+        public Territories Get(string id)
         {
             Territories territory = context.Territories.Find(id);
             return territory;
@@ -36,6 +37,9 @@ namespace TP4.Logic
         public void Update(Territories territory)
         {
             Territories territoryUpdate = context.Territories.Find(territory.TerritoryID);
+            territoryUpdate.TerritoryDescription = territory.TerritoryDescription;
+            territoryUpdate.RegionID = territory.RegionID;
+            context.SaveChanges();
         }
     }
 }

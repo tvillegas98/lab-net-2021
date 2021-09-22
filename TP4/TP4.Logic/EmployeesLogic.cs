@@ -15,16 +15,18 @@ namespace TP4.Logic
             context.SaveChanges();
         }
 
-        public void Delete(int id)
+        public void Delete(string id)
         {
-            Employees employee = context.Employees.Find(id);
+            int idNumerico = int.Parse(id);
+            Employees employee = context.Employees.Find(idNumerico);
             context.Employees.Remove(employee);
             context.SaveChanges();
         }
 
-        public Employees Get(int id)
+        public Employees Get(string id)
         {
-            Employees employee = context.Employees.Find(id);
+            int idNumerico = int.Parse(id);
+            Employees employee = context.Employees.Find(idNumerico);
             return employee;
         }
 

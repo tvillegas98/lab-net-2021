@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\InputHelpers.cs" />
+    <Compile Include="Helpers\OperacionesHelper.cs" />
     <Compile Include="Helpers\OutputHelpers.cs" />
     <Compile Include="MyExtensions\StringExtensions.cs" />
     <Compile Include="Program.cs" />

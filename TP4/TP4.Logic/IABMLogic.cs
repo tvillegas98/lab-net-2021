@@ -11,9 +11,9 @@ namespace TP4.Logic
         List<T> GetAll();
         void Add(T Object);
 
-        void Delete(int id);
+        void Delete(string id);
 
         void Update(T Object);
-        T Get(int id);
+        T Get(string id);
     }
 }

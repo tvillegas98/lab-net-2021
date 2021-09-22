@@ -55,6 +55,7 @@
     <Compile Include="EmployeesLogic.cs" />
     <Compile Include="IABMLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegionLogic.cs" />
     <Compile Include="TerritoriesLogic.cs" />
   </ItemGroup>
   <ItemGroup>
