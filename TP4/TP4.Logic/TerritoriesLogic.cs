@@ -11,8 +11,8 @@ namespace TP4.Logic
     {
         public void Add(Territories territory)
         {
-            context.Territories.Add(territory);
-            context.SaveChanges();
+                context.Territories.Add(territory);
+                context.SaveChanges();
         }
 
         public void Delete(string id)

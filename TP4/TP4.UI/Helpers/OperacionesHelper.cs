@@ -21,39 +21,14 @@ namespace TP4.UI.Helpers
         {
             if (opcion == 1)
             {
-                Console.WriteLine("Ingrese el ID del nuevo territorio");
-                string id = Console.ReadLine();
-                Console.WriteLine("Ingrese la descripción de ese territorio");
-                string territoryDescription = Console.ReadLine();
-                int idRegion = InputHelpers.ObtenerNumero(inputRegionID, numeroInvalido);
-
-                Territories territory = new Territories() {
-                    TerritoryID = id,
-                    TerritoryDescription = territoryDescription,
-                    RegionID = idRegion
-                };
-                territorios.Add(territory);
-
-            }else if (opcion == 2)
+                TerritoriesHelper.AgregarTerritorio(territorios);
+            } else if (opcion == 2)
             {
-                Console.WriteLine("Ingrese el ID del nuevo territorio");
-                string id = Console.ReadLine();
-                Console.WriteLine("Ingrese la nueva descripción de ese territorio");
-                string territoryDescription = Console.ReadLine();
-                int idRegion = InputHelpers.ObtenerNumero(inputRegionID, numeroInvalido);
-                Territories territory = new Territories()
-                {
-                    TerritoryID = id,
-                    TerritoryDescription = territoryDescription,
-                    RegionID = idRegion
-                };
-                territorios.Update(territory);
+                TerritoriesHelper.ActualizarTerritorio(territorios);
             }
             else
             {
-                Console.WriteLine("Ingrese el ID del nuevo territorio");
-                string id = Console.ReadLine();
-                territorios.Delete(id);
+                TerritoriesHelper.EliminarTerritorio(territorios);
             }
         }
 
@@ -79,10 +54,10 @@ namespace TP4.UI.Helpers
             if (opcion == 1)
             {
                 OutputHelpers.MostrarTerritorios();
-            }else if(opcion == 2)
+            } else if (opcion == 2)
             {
                 OutputHelpers.MostrarEmpleados();
-            }else if(opcion == 3)
+            } else if (opcion == 3)
             {
                 OutputHelpers.MostrarRegiones();
             }
@@ -91,6 +66,7 @@ namespace TP4.UI.Helpers
                 abrirMenuABM();
             }
         }
-        
+
     }
 }
+

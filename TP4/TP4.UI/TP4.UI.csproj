@@ -56,6 +56,7 @@
     <Compile Include="Helpers\InputHelpers.cs" />
     <Compile Include="Helpers\OperacionesHelper.cs" />
     <Compile Include="Helpers\OutputHelpers.cs" />
+    <Compile Include="Helpers\TerritoriesHelper.cs" />
     <Compile Include="MyExtensions\StringExtensions.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
