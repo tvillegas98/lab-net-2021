@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
-// asociada con un ensamblado.
-[assembly: AssemblyTitle("TP3.Logic")]
+// asociada a un ensamblado.
+[assembly: AssemblyTitle("TP4.UI")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TP3.Logic")]
+[assembly: AssemblyProduct("TP4.UI")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("f46e2b34-8a75-4a5d-8544-4be7e539fc07")]
+[assembly: Guid("da0e3401-3d11-45a3-86b9-38f3bc2e9a85")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

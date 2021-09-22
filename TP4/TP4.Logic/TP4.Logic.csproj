@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7FE1FB57-DE90-4A69-8093-3A8CCF257ADD}</ProjectGuid>
+    <ProjectGuid>{F46E2B34-8A75-4A5D-8544-4BE7E539FC07}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>T_P3.Entities</RootNamespace>
-    <AssemblyName>T`P3.Entities</AssemblyName>
+    <RootNamespace>TP4.Logic</RootNamespace>
+    <AssemblyName>TP4.Logic</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -51,10 +51,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Employees.cs" />
+    <Compile Include="BaseLogic.cs" />
+    <Compile Include="EmployeesLogic.cs" />
+    <Compile Include="IABMLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Region.cs" />
-    <Compile Include="Territories.cs" />
+    <Compile Include="TerritoriesLogic.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TP4.Data\TP4.Data.csproj">
+      <Project>{F2DEA167-745C-4327-ACC6-FF48000C68F0}</Project>
+      <Name>TP4.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TP4.Entities\T`P4.Entities.csproj">
+      <Project>{7FE1FB57-DE90-4A69-8093-3A8CCF257ADD}</Project>
+      <Name>T`P4.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
