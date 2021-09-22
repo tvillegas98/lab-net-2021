@@ -3,20 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TP3.Entities;
-using TP3.Logic;
-
-namespace TP3.UI
+using TP4.Entities;
+using TP4.Logic;
+using TP4.UI.Helpers;
+namespace TP4.UI
 {
     class Program
     {
         static void Main(string[] args)
         {
-            TerritoriesLogic territories = new TerritoriesLogic();
-            foreach(Territories territory in territories.GetAll())
-            {
-                Console.WriteLine($"{territory.TerritoryID}-{territory.TerritoryDescription}");
-            }
+            OutputHelpers.MostrarTerritorios();
+            OutputHelpers.MostrarEmpleados();
             Console.ReadLine();
         }
     }
