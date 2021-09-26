@@ -56,7 +56,6 @@
     <Compile Include="Customers.cs" />
     <Compile Include="Orders.cs" />
     <Compile Include="Products.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

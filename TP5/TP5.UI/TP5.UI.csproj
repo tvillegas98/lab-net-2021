@@ -53,6 +53,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\InputHelpers.cs" />
+    <Compile Include="Helpers\OperacionesHelper.cs" />
+    <Compile Include="Helpers\QueriesHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
