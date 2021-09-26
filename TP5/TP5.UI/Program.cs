@@ -28,10 +28,13 @@ namespace TP5.UI
             "10. Query para devolver lista de productos ordenados por UnitsInStock de mayor a menor\n" +
             "11. Query para devolver las distintas categorías asociadas a productos\n" +
             "12. Query para devolver el primer elemento de una lista de producos\n" +
-            "13. Query para devolver los costumer con cantidad de ordenes asociadas";
+            "13. Query para devolver los costumer con cantidad de ordenes asociadas\n" +
+            "14. Cerrar Programa\n" +
+            "Ingrese una opción: ";
+
         const string opcionInvalida = "Opción inválida, intente nuevamente";
         const int minOpciones = 1;
-        const int maxOpciones = 13;
+        const int maxOpciones = 14;
         static void Main(string[] args)
         {
 

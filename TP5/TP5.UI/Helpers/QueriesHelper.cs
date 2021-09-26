@@ -89,7 +89,28 @@ namespace TP5.UI.Helpers
         
         public static void MostrarLasCategoriasAsociadasAProductos(List<CategoriesProductsDTO> categoriesProducts)
         {
-            Console.WriteLine($"");
+            Console.WriteLine($"{"CategoryID", -15}|{"CategoryName", -20}|");
+            foreach (CategoriesProductsDTO category in categoriesProducts)
+            {
+                Console.WriteLine($"{category.CategoryID, -15}|{category.CategoryName, -20}");
+            }
+            InputHelpers.PresioneUnaTecla();
+        }
+
+        public static void MostrarPrimerElementoDeLaListaDeProductos(Products product)
+        {
+            Console.WriteLine($"El primer producto es la lista de productos es: {product.ProductName} con ID: {product.ProductID}");
+            InputHelpers.PresioneUnaTecla();
+        }
+
+        public static void MostrarCustomersConCantidadDeOrdenes(Dictionary<string, int> QuantityOfOrders)
+        {
+            Console.WriteLine($"{"CustomerName", -40}|{"Quantity of Orders", -15}|");
+            foreach(KeyValuePair<string, int> customersOrder in QuantityOfOrders)
+            {
+                Console.WriteLine($"{customersOrder.Key, -40}|{customersOrder.Value, -15}|");
+            }
+            InputHelpers.PresioneUnaTecla();
         }
     }
 }
