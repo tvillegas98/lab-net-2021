@@ -3,8 +3,36 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <h1 id="contacto">Contacto</h1>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
+    <div id="divForm">
+        <p>Información Personal</p>
+        <form id="personal">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="edad">Edad:</label><br>
+            <input type="text" id="edad" name="edad"><br>
+            <!-- ---------------------------------------- -->
+            <input type="radio" id="m" name="genero" value="Masculino">
+            <label for="m">Masculino</label><br>
+            <input type="radio" id="f" name="genero" value="Femenino">
+            <label for="f">Femenino</label><br>
+            <input type="radio" id="o" name="genero" value="Otro">
+            <label for="o">Otro</label><br>
+        </form>
+        <p>Información Adicional</p>
+        <form id="adicional">
+            <label for="empresa">Empresa:</label><br>
+            <input type="text" id="empresa" name="empresa"><br>
+        </form>
+        <input type="button" value="Submit" onclick="" id="submit">
+    </div>
 </body>
 </html>

@@ -1,0 +1,55 @@
+body{
+    background: linear-gradient(to left top, #4facfe,  #2575fc) fixed;
+}
+
+#contacto{
+    text-align: center;
+    border: 5px solid lightblue;
+    background: linear-gradient(to left top, #48c6ef ,  #6f86d6);
+    border-style: solid;
+    margin: auto;
+    width: 22%;
+    height: fit-content;
+    border-color: lightblue;
+    padding: 5px;
+    border-radius: 10px;
+}
+#divForm{
+    background: linear-gradient(to right bottom, #243949,  #517fa4);
+    border: 5px solid lightblue;
+    padding: 30px;
+    text-align: left;
+    width: fit-content;
+    height: fit-content;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#personal{
+    margin: 0 auto;
+    padding: 30px;
+    text-align: left;
+    background: linear-gradient(to left top, #48c6ef ,  #6f86d6);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 5px solid lightblue;
+    border-radius: 10px;
+}
+#adicional{
+    text-align: left;
+    margin: 0 auto;
+    padding: 30px;
+    border: 5px solid lightblue;
+    background: linear-gradient(to left top, #48c6ef ,  #6f86d6);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
+
+p{
+    margin: 0 auto;
+    padding: 10px;
+    border: 5px solid lightblue;
+    background: linear-gradient(to left top, #48c6ef ,  #6f86d6);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+}
