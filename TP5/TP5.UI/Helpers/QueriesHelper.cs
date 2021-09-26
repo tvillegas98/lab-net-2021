@@ -48,10 +48,10 @@ namespace TP5.UI.Helpers
 
         public static void MostrarCostumersDeLaRegionWA(List<Customers> customers)
         {
-            Console.WriteLine($"{"CustomerID",-10}|{"CustomerName",-40}|{"Region", -10}");
+            Console.WriteLine($"{"CustomerID",-10}|{"CustomerName",-40}|{"Region", -10}|");
             foreach (Customers customer in customers)
             {
-                Console.WriteLine($"{customer.CustomerID,-10}|{customer.CompanyName,-40}|{customer.Region, -10}");
+                Console.WriteLine($"{customer.CustomerID,-10}|{customer.CompanyName,-40}|{customer.Region, -10}|");
             }
             InputHelpers.PresioneUnaTecla();
         }
@@ -92,7 +92,7 @@ namespace TP5.UI.Helpers
             Console.WriteLine($"{"CategoryID", -15}|{"CategoryName", -20}|");
             foreach (CategoriesProductsDTO category in categoriesProducts)
             {
-                Console.WriteLine($"{category.CategoryID, -15}|{category.CategoryName, -20}");
+                Console.WriteLine($"{category.CategoryID, -15}|{category.CategoryName, -20}|");
             }
             InputHelpers.PresioneUnaTecla();
         }
@@ -105,10 +105,10 @@ namespace TP5.UI.Helpers
 
         public static void MostrarCustomersConCantidadDeOrdenes(Dictionary<string, int> QuantityOfOrders)
         {
-            Console.WriteLine($"{"CustomerName", -40}|{"Quantity of Orders", -15}|");
+            Console.WriteLine($"{"CustomerName", -40}|{"Quantity of Orders", -20}|");
             foreach(KeyValuePair<string, int> customersOrder in QuantityOfOrders)
             {
-                Console.WriteLine($"{customersOrder.Key, -40}|{customersOrder.Value, -15}|");
+                Console.WriteLine($"{customersOrder.Key, -40}|{customersOrder.Value, 20}|");
             }
             InputHelpers.PresioneUnaTecla();
         }

@@ -4,10 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TP5.Logic;
-using TP5.Data;
-using TP5.Entities;
-using System.Data.Entity;
-using TP5.Logic.LogicExtensions;
 using TP5.UI.Helpers;
 
 namespace TP5.UI
