@@ -4,13 +4,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <h1 id="contacto">Contacto</h1>
+    <script type="text/javascript" src="jquery.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        $(document).ready(function(){
+            $("#campos").click(function(){
+                $("#personal")[0].reset();
+                $("#adicional")[0].reset();
+            })
+        })
+    </script>
 </head>
 <body>
     
     <div id="divForm">
         <p>Información Personal</p>
-        <form id="personal">
+        <form id="personal" onsubmit="return Vef();" name="personal">
             <label for="nombre">Nombre:</label><br>
             <input type="text" id="nombre" name="nombre"><br>
             <label for="apellido">Apellido:</label><br>
@@ -28,11 +37,26 @@
             <label for="o">Otro</label><br>
         </form>
         <p>Información Adicional</p>
-        <form id="adicional">
+        <form id="adicional" name="adicional">
             <label for="empresa">Empresa:</label><br>
             <input type="text" id="empresa" name="empresa"><br>
         </form>
-        <input type="button" value="Submit" onclick="" id="submit">
+        <input type="button" value="Submit" onclick="VerificarNombreYApellido()" id="submit">
+        <input type="button" value="Borrar campos" id="campos">
     </div>
+    <script>
+        function VerificarNombreYApellido(){
+            if(!document.forms["personal"]["nombre"].value || !document.forms["personal"]["apellido"].value)
+                {
+                    alert("Se debe ingresar nombre y apellido para enviar el formulario.");
+                }
+            }
+    </script>
+    <!-- <script>
+        function BorrarCampos(){
+            document.forms["personal"].reset();
+            document.forms["adicional"].reset();
+        }
+    </script> -->
 </body>
 </html>
