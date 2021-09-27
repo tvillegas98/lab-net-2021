@@ -28,7 +28,7 @@
             <input type="text" id="email" name="email"><br>
             <label for="edad">Edad:</label><br>
             <input type="text" id="edad" name="edad"><br>
-            <!-- ---------------------------------------- -->
+
             <input type="radio" id="m" name="genero" value="Masculino">
             <label for="m">Masculino</label><br>
             <input type="radio" id="f" name="genero" value="Femenino">
@@ -41,7 +41,7 @@
             <label for="empresa">Empresa:</label><br>
             <input type="text" id="empresa" name="empresa"><br>
         </form>
-        <input type="button" value="Submit" onclick="VerificarNombreYApellido()" id="submit">
+        <input type="button" value="Submit" onclick="VerificarForm()" id="submit">
         <input type="button" value="Borrar campos" id="campos">
     </div>
     <script>
@@ -51,6 +51,22 @@
                     alert("Se debe ingresar nombre y apellido para enviar el formulario.");
                 }
             }
+        function VerificarEdad(){
+            let edad = document.forms["personal"]["edad"].value;
+            if(isNaN(edad) || !edad){
+                alert("Se debe ingresar una edad válida");
+            }
+            if(parseInt(edad) < 18){
+                alert("Es muy joven para completar este form.");
+            }else if(parseInt(edad) > 100){
+                alert("¿Es ústed inmortal?")
+            }
+        }
+
+        function VerificarForm(){
+            VerificarNombreYApellido();
+            VerificarEdad();
+        }
     </script>
     <!-- <script>
         function BorrarCampos(){

@@ -8,16 +8,16 @@ body{
     background: linear-gradient(to left top, #48c6ef ,  #6f86d6);
     border-style: solid;
     margin: auto;
-    width: 22%;
+    width: 24%;
     height: fit-content;
     border-color: lightblue;
-    padding: 5px;
+    padding: fit-content;
     border-radius: 10px;
 }
 #divForm{
     background: linear-gradient(to right bottom, #243949,  #517fa4);
     border: 5px solid lightblue;
-    padding: 30px;
+    padding: 40px;
     text-align: left;
     width: fit-content;
     height: fit-content;
@@ -50,11 +50,48 @@ p{
     padding: 10px;
     border: 5px solid lightblue;
     background: linear-gradient(to left top, #48c6ef ,  #6f86d6);
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Oswald';
+    font-size: 20px;
     border-radius: 10px;
+    text-align: center;
 }
 
-#campos{
-    display: inline-block;
-    
+#campos{    
+    float:right;
+    background: linear-gradient(to right bottom, #243949,  #517fa4);
+    border: 5px solid lightblue;
+    border-radius:6px;
+    font-family: 'Oswald';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#campos:hover{
+    border: 5px solid lightblue;
+    background: linear-gradient(to left top, #48c6ef ,  #6f86d6);
+}
+
+#campos:active{
+    transform: scale(0.90);
+}
+
+#submit{
+    float:left;
+    background: linear-gradient(to right bottom, #243949,  #517fa4);
+    border: 5px solid lightblue;
+    border-radius:6px;
+    font-family: 'Oswald';
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}   
+
+#submit:hover {
+    border: 5px solid lightblue;
+    background: linear-gradient(to left top, #48c6ef ,  #6f86d6);
+}
+
+#submit:active{
+    transform: scale(0.90)
 }
